@@ -1,0 +1,48 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0f0c29; color: white; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+.converter-box {
+    background: #1a1a2e;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #c5a059;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Neon Title */
+.neon-title {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #c5a059, 0 0 20px #c5a059;
+}
+
+.input-group { display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px; }
+
+input, select { 
+    padding: 12px; border-radius: 5px; border: 1px solid #303050; 
+    background: #0f0c29; color: white; font-size: 1rem;
+}
+
+.compute-btn {
+    width: 100%; padding: 15px; background: #c5a059; color: #0f0c29;
+    border: none; border-radius: 5px; font-weight: bold; cursor: pointer;
+    transition: 0.3s;
+}
+.compute-btn:hover { background: #e0b86a; transform: scale(1.02); }
+
+/* Results Grid */
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+
+.result-card {
+    background: rgba(26, 26, 46, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #c5a059;
+}
+
+.result-card h4 { color: #c5a059; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 5px; }
+.result-card p { font-size: 1.1rem; font-weight: bold; }

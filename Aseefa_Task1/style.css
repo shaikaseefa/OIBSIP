@@ -1,0 +1,557 @@
+/* ==========================================================================
+   ROYAL LUXURY CANVAS BACKGROUND (ONLY TRANSFORMATION)
+   ========================================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+    padding: 0 8%;
+    
+    /* Deep rich obsidian-purple gradient canvas */
+    background-color: #0b0813;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(111, 44, 244, 0.15) 0px, transparent 40%),
+        radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 0%, rgba(212, 175, 55, 0.04) 0px, transparent 40%); /* Subtle gold ambient light */
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Ambient Floating Light Glow */
+body::before {
+    content: '';
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+    z-index: -1;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   THE REMAINING COMPONENT STRUCTURE (UNTOUCHED STRUCTURAL CONTENT)
+   ========================================================================== */
+
+/* 1. Purple & White Blurred Navigation Component */
+.main-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 4%;
+    background-color: rgba(11, 8, 19, 0.8); /* Translucent Premium Dark Base */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.logo span { 
+    color: #a855f7; /* High-Visibility Premium Vivid Violet */
+}
+
+/* Upper Corner Chef Emoji Style Styling */
+.chef-corner-emoji {
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #a49cb3; /* Elegant slate gray-purple */
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-right: 2.5rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover { 
+    color: #ffffff; 
+}
+
+.nav-cta {
+    background-color: #6f2cf4;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(111, 44, 244, 0.3);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-cta:hover { 
+    transform: scale(1.03); 
+    background-color: #591ed8;
+    box-shadow: 0 10px 25px rgba(111, 44, 244, 0.4);
+}
+
+/* 2. Hero Section Layout Rules with Gradient Highlights */
+.hero-section {
+    padding: 7rem 4% 5rem 4%;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.hero-left { flex: 1.1; }
+
+.hero-left h1 {
+    font-size: 3.8rem;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Luxe Violet-Gold Metallic Gradient */
+.gradient-text {
+    background: linear-gradient(135deg, #b07eff 0%, #e1b6ff 50%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    color: #a49cb3;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 580px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.primary-btn {
+    background-color: #6f2cf4;
+    color: white;
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(111, 44, 244, 0.3);
+    transition: all 0.2s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(111, 44, 244, 0.4);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #e1b6ff;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    padding: 1.1rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.secondary-btn:hover { 
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+/* 3. Live Stalls Dashboard Widget Component */
+.hero-right {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+}
+
+.stalls-dashboard-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(25, 20, 38, 0.6);
+    border-radius: 28px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.widget-header h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.stall-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stall-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.stall-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stall-emoji { font-size: 1.5rem; }
+
+.stall-info h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.stall-info p {
+    font-size: 0.8rem;
+    color: #a49cb3;
+}
+
+.status-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.7rem;
+    border-radius: 50px;
+}
+
+.status-open .status-badge {
+    background-color: rgba(52, 199, 89, 0.2);
+    color: #34c759;
+}
+
+.status-busy .status-badge {
+    background-color: rgba(255, 149, 0, 0.2);
+    color: #ff9500;
+}
+
+/* 4. Menu Presentation Section */
+.menu-section {
+    padding: 6rem 4%;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.section-header p {
+    color: #a49cb3;
+    font-size: 1.1rem;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu-card {
+    background-color: rgba(25, 20, 38, 0.5);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    width: 340px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s, border-color 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    background-color: rgba(25, 20, 38, 0.8);
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+.price {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: #ffd700; /* Luxury Gold Badge */
+    color: #0b0813;
+    padding: 0.4rem 0.9rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.food-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.menu-card p {
+    color: #a49cb3;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* 5. Live Tracking Progress Tracker */
+.tracker-section {
+    padding: 5rem 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.tracker-card {
+    background-color: rgba(25, 20, 38, 0.5);
+    border-radius: 24px;
+    padding: 2.5rem;
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tracker-header {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    gap: 0.6rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding-bottom: 1.2rem;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #a855f7;
+    border-radius: 50%;
+    display: inline-block;
+    animation: beacon 1.8s infinite ease-in-out;
+}
+
+@keyframes beacon {
+    0% { transform: scale(0.9); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.4; }
+    100% { transform: scale(0.9); opacity: 1; }
+}
+
+.steps-progress-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.steps-progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    right: 40px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    flex: 1;
+}
+
+.step-circle {
+    width: 54px;
+    height: 54px;
+    background-color: #1a1523;
+    color: #a49cb3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+    border: 4px solid #0b0813;
+}
+
+.step.active .step-circle {
+    background-color: #6f2cf4;
+    color: white;
+}
+
+.step.active.processing .step-circle {
+    background-color: #a855f7;
+    animation: pulseProcess 1.5s infinite alternate;
+}
+
+@keyframes pulseProcess {
+    0% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.4); }
+    100% { box-shadow: 0 0 0 10px rgba(168, 85, 247, 0); }
+}
+
+.step span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #645e70;
+}
+
+.step.active span { color: #ffffff; }
+
+/* Dynamic Warning Notice Layout */
+.delay-alert-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    background-color: rgba(254, 243, 199, 0.05);
+    border: 1px solid rgba(254, 243, 199, 0.15);
+    padding: 1.2rem 1.5rem;
+    border-radius: 16px;
+}
+
+.alert-icon { font-size: 1.4rem; }
+
+.alert-text h4 {
+    color: #fef3c7;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.alert-text p {
+    color: #d97706;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* 6. Strategic Importance Display Grid */
+.importance-section {
+    padding: 6rem 4%;
+}
+
+.importance-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background-color: rgba(25, 20, 38, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    width: 280px;
+    text-align: left;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.info-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(111, 44, 244, 0.15);
+    color: #e1b6ff;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.info-card p {
+    color: #a49cb3;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Advanced Dark-Indigo/Purple Footer */
+.advanced-footer {
+    padding: 2.5rem 4%;
+    background-color: #05030a;
+    color: #645e70;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Mobile Media Queries */
+@media (max-width: 992px) {
+    .hero-wrapper { flex-direction: column-reverse; text-align: center; gap: 3rem; }
+    .hero-left h1 { font-size: 2.8rem; }
+    .hero-left p { margin: 0 auto 2.5rem auto; }
+    .hero-buttons { justify-content: center; }
+    .steps-progress-bar::before { left: 20px; right: 20px; }
+    .info-card { width: 100%; }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Metric Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="converter-box">
+    <h2 class="neon-title">🌡️ Thermal Metric Converter</h2>
+    
+    <div class="input-group">
+        <input type="number" id="tempInput" placeholder="Enter Temperature...">
+        <select id="sourceUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+    </div>
+
+    <button onclick="convert()" class="compute-btn">Compute Transformation</button>
+
+    <div id="resultsArea" class="results-grid" style="display: none;">
+        <div class="result-card">
+            <h4>Fahrenheit</h4>
+            <p id="resF">--</p>
+        </div>
+        <div class="result-card">
+            <h4>Kelvin</h4>
+            <p id="resK">--</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

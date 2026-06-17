@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBite Pro - Smart Campus Dining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ADVANCED BLURRED NAVIGATION WITH UPPER CORNER EMOJI -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="chef-corner-emoji">👩🏻‍🍳</span> Campus<span>Bite</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#stalls">Live Stalls</a>
+            <a href="#menu-preview">Menu</a>
+            <a href="#tracker">Live Tracker</a>
+            <a href="#importance">Importance</a>
+        </nav>
+        <button class="nav-cta">Install App</button>
+    </header>
+
+    <!-- HERO SPLIT BANNER -->
+    <section class="hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-left">
+                <h1>Smart Dining at <br><span class="gradient-text">CampusBite.</span></h1>
+                <p>No queues. No waiting. Just pick your favorite stall, complete your quick secure digital token order, and collect it fresh right on time.</p>
+                <div class="hero-buttons">
+                    <button class="primary-btn">Get Started Free</button>
+                    <button class="secondary-btn">View Menu ➔</button>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <!-- LIVE STALLS MONITOR WIDGET -->
+                <div id="stalls" class="stalls-dashboard-card">
+                    <div class="widget-header">
+                        <h3>📍 Live Campus Stalls</h3>
+                        <span class="pulse-dot"></span>
+                    </div>
+                    
+                    <div class="stall-list">
+                        <div class="stall-item status-open">
+                            <div class="stall-info">
+                                <span class="stall-emoji">🍲</span>
+                                <div>
+                                    <h4>Main Food Canteen</h4>
+                                    <p>Meals, Tiffins & Biryani</p>
+                                </div>
+                            </div>
+                            <span class="status-badge">Open</span>
+                        </div>
+
+                        <div class="stall-item status-open">
+                            <div class="stall-info">
+                                <span class="stall-emoji">🧋</span>
+                                <div>
+                                    <h4>Juice & Shake Hub</h4>
+                                    <p>Fresh Juices & Beverages</p>
+                                </div>
+                            </div>
+                            <span class="status-badge">Open</span>
+                        </div>
+
+                        <div class="stall-item status-busy">
+                            <div class="stall-info">
+                                <span class="stall-emoji">🍕</span>
+                                <div>
+                                    <h4>Bakery & Pizza Corner</h4>
+                                    <p>Puffs, Snacks & Cakes</p>
+                                </div>
+                            </div>
+                            <span class="status-badge">Busy (10m wait)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU PRESENTATION SECTION -->
+    <section id="menu-preview" class="menu-section">
+        <div class="section-header">
+            <h2>Explore The Canteen Menus</h2>
+            <p>Check out what's cooking right now in the campus food court stalls.</p>
+        </div>
+        
+        <div class="menu-grid">
+            <div class="menu-card">
+                <span class="price">₹45</span>
+                <div class="food-icon">🥞</div>
+                <h3>Masala Dosa</h3>
+                <p>Crispy golden crepe served with signature spiced potato mash, coconut chutney and hot sambar.</p>
+            </div>
+            <div class="menu-card">
+                <span class="price">₹90</span>
+                <div class="food-icon">🍲</div>
+                <h3>Veg Fried Rice Combo</h3>
+                <p>Wok-tossed premium basmati grains paired with a rich Manchurian gravy bowl.</p>
+            </div>
+            <div class="menu-card">
+                <span class="price">₹30</span>
+                <div class="food-icon">🧋</div>
+                <h3>Ice Coffee / Thick Shake</h3>
+                <p>Chilled double-shot espresso topped with rich vanilla cream to beat the afternoon heat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE ORDER TRACKING & DELAY ALERT SYSTEM -->
+    <section id="tracker" class="tracker-section">
+        <div class="tracker-card">
+            <div class="tracker-header">
+                <h3>Live Status Mock Simulation</h3>
+                <span class="pulse-dot"></span> Active Token #4092
+            </div>
+            <div class="steps-progress-bar">
+                <div class="step active">
+                    <div class="step-circle">✓</div>
+                    <span>Order Placed</span>
+                </div>
+                <div class="step active processing">
+                    <div class="step-circle">🍳</div>
+                    <span>Cooking</span>
+                </div>
+                <div class="step">
+                    <div class="step-circle">🛍️</div>
+                    <span>Ready for Pickup</span>
+                </div>
+            </div>
+
+            <!-- DYNAMIC DELAY ALERT MESSAGE MODULE -->
+            <div class="delay-alert-box">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-text">
+                    <h4>Peak Hour Delays Noticed</h4>
+                    <p>The Bakery Corner is experiencing high order volumes. Preparation may take 5–7 minutes longer than usual. Plan your breaks accordingly!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES & STRATEGIC IMPORTANCE -->
+    <section id="importance" class="importance-section">
+        <div class="section-header">
+            <h2>Why CampusBite Matters</h2>
+            <p>Bridging the gap between limited class intervals and crowded campus food courts.</p>
+        </div>
+
+        <div class="importance-grid">
+            <div class="info-card">
+                <div class="info-icon">⚡</div>
+                <h3>Optimized Class Break Windows</h3>
+                <p>Campus breaks last only 10 to 15 minutes. CampusBite eliminates long queue bottlenecks, letting students pre-order and eat immediately without missing lectures.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📈</div>
+                <h3>Vendor Crowding Solutions</h3>
+                <p>Spreads customer arrival times efficiently over continuous hourly blocks, preventing massive crowd rushes at vendor counters during peak intervals.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">🛡️</div>
+                <h3>Secure Digital Tokens</h3>
+                <p>Replaces manual cash handovers or erratic UPI scanning delays with unified, auto-generated platform tokens that speed up order handoffs.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📊</div>
+                <h3>Live Analytics Dashboard</h3>
+                <p>Empowers college kitchen vendors with predictive order pipelines, minimizing morning food waste and optimizing inventory planning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANCED FOOTER -->
+    <footer class="advanced-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 CampusBite Engines. Engineered for Oasis Infobyte Advanced Premium Portfolio Showcase.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
